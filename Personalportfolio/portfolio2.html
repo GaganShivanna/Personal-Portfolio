@@ -1,0 +1,115 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="port.css">
+	<title>Personal Portfolio</title>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="Gagan Shivanna-logos_transparent.png" class="logo">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#Projects">Works</a></li>
+					<li><a href="#">Contact</a></li>
+			</nav>
+			<div class="header-text">
+				<p>FULL STACK WEB DEVELOPER8
+				</p>
+				<h1>Hi, I am <span>Gagan</span><br>from India</h1>
+			</div>
+		</div>
+	</div>
+
+
+<!-- ------------------About ---------------------->
+
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="My project.png">
+				</div>
+				<div class="about-col-2">
+					<h1 class="subtitle">About Me</h1>
+					<p>Hello there! My name is Gagan Shivanna, and I’m thrilled to share a little about myself. I am a passionate Computer Science Student with a keen interest in Full Stack Web Development. I believe in the power of Consistency and strive hard to accomplish my Goals.
+
+					When it comes to Web Development, I have gained valuable learning experience through Open Sources and also by participating in multiple Hackathons with my Team Pegasus. This has allowed me to develop strong skills in Leadership and a Good understanding of Front end development.</p>
+
+					<div class="tab-titles"> 
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>HTML,CSS,JS</span><br> For Creating User Interface & Functionality</li>
+							<li><span>NODE JS, EXPRESS JS</span><br>For Creating the Backend </li>
+							<li><span>LEARNING REACT JS</span><br>For Creating more Amazing Websites!</li>
+							<li><span>JAVA</span><br>For Creating Dynamic Applications</li>
+							<li><span>PYTHON</span><br>It has a Huge Number Of Libraries To build Amazing Applications</li>
+							<li><span>SQL</span><br>Relational Database Management System</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2021-2025</span><br> B.Tech From K.S.INSTITUTE OF TECHNOLOGY</li>
+							<li><span>2011-2021</span><br>3rd Grade - 12th Grade From INDIAN SCHOOL MUSCAT</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- -------------------------projects------------>
+<div id="Projects">
+	<div class="container">
+		<h1 class="sub-title">My Works</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="Weatherapp.png">
+				<div class="layer">
+				<h3><b>Weather Application</b></h3>
+					<p>This Application lets you to access the live weather updates across the world , with the help of API.</p>
+					<a href="file:///C:/Users/gagan/OneDrive/Desktop/Web1.html">Click Here</a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="img.png">
+				<div class="layer">
+					<h3><b>JAVA Internship</b></h3>
+					<p>During this Internship period , I learned the Fundamental of OOPS.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="return"><ul><li><a href="#">Click Here To Go Home Page</a></li></ul></div>
+
+
+
+
+
+<script>
+	var tablinks=document.getElementsByClassName("tab-links");
+	var tabcontents=document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for (tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for (tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+</body>
+</html>
